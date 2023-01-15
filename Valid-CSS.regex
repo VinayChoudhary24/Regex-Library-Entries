@@ -1,0 +1,35 @@
+# Grab Valid CSS Rules and Properties
+             -- /([#.a-z]{1}[a-z_]{1}[\s\S]+?){([\s\S]*?)}/g
+
+# TEST
+.test {}
+
+._test {
+test: tesdff;
+test1: tesdff;
+test2: tesdff;
+}
+
+aaa {
+test1: tesdff;
+test2: tesdff;
+}
+
+
+#test {}
+
+#test1 {}
+
+#_test {}
+
+#_test, 
+#test2 {}
+
+#_test:psudo-class {}
+
+
+#1 {}
+.2 {}
+.- {}
+##test {}
+..test {}

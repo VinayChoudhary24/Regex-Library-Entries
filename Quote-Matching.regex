@@ -1,0 +1,24 @@
+# Matches text within quotes (", ') and escapes the charecters.
+             --  /(["'])((?:(?=(?:\\)*)\\.|.)*?)\1/gm
+
+# TEST
+" This is selected \\" this is not
+' Works with JS RegExp '
+"You can also get the quote type used"
+
+"How it works"
+"------------"
+
+' (["\']) Matches a " or a \' and stores it in \1'
+' ( starts \2'
+' (?: starts a non-capturing group'
+' (?=(?:\\)*) Will check if there is an odd amount of \ '
+' \\. will escape / ignore it '
+' |.  will never mind it if there\'s an even amount  '
+' )*? will close the non-capturing group and repeat it'
+' \1  will make it close with the quote selected in \1'
+
+"Flags:"
+"------"
+
+" g: global, selects multiple times "

@@ -1,0 +1,5 @@
+# Attempts to mimic Google search box behavior, returning an array with the separated search strings (that keep the +/- indicator for following operations)
+                  --  /([+-]?(?:'.+?'|".+?"|[^+\- ]{1}[^ ]*))/g
+
+# TEST
+something else    +good -bad 'other stuff' ++'good stuff' -"bad stuff" ---"dall'orto" a v   ac

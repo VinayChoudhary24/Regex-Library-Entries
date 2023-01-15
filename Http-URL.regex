@@ -1,0 +1,5 @@
+# general purpose HTTP URL regex
+                -- /^((https?:)(\/\/\/?)([\w]*(?::[\w]*)?@)?([\d\w\.-]+)(?::(\d+))?)?([\/\\\w\.()-]*)?(?:([?][^#]*)?(#.*)?)*/gmi
+
+# TEST
+http://miguel:test@hoistedjs.com:599/moretesting?topic=data#migration/path

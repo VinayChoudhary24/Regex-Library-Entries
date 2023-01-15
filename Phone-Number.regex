@@ -1,0 +1,5 @@
+# Allows phone numbers with optional country code, optional special characters and whitespace
+             --  /^([+]?\d{1,2}[-\s]?|)\d{3}[-\s]?\d{3}[-\s]?\d{4}$/
+
+# TEST
++1 504 595 1378

@@ -1,0 +1,12 @@
+# Allows inserting expiry date as MM/YYYY or MM-YYYY format
+                               --  /^(0[1-9]|1[0-2])(\/|-)([0-9]{4})$/gm
+
+# TEST
+02/2413
+11/2011
+01/2015
+02/2013
+12/2014
+02/2013
+01-2013
+02/2013
